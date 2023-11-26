@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Comment Hear</title>
+</head>
+<body>
+
+    <h1>Comment Hear</h1>
+    <div id="comment-box">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ducimus commodi tempora voluptatem dolores expedita, eveniet quaerat iure eaque. Eveniet.</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ducimus commodi tempora voluptatem dolores expedita, eveniet quaerat iure eaque. Eveniet.</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ducimus commodi tempora voluptatem dolores expedita, eveniet quaerat iure eaque. Eveniet.</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ducimus commodi tempora voluptatem dolores expedita, eveniet quaerat iure eaque. Eveniet.</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ducimus commodi tempora voluptatem dolores expedita, eveniet quaerat iure eaque. Eveniet.</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ducimus commodi tempora voluptatem dolores expedita, eveniet quaerat iure eaque. Eveniet.</p>
+    </div>
+    
+    
+    <div>
+        <textarea name="" id="input-filed" cols="80" rows="10"></textarea>
+    
+        <div class="cmnt-btn">
+            <button id="comment-button">Comment</button>
+        </div>
+    </div>
+
+
+<!-- <script src="js/app.js"></script> -->
+<script> 
+    document.getElementById('comment-button').addEventListener('click', function () {const textarea = document.getElementById('input-filed');
+    const text = textarea.value;
+    const p = document.createElement('p');
+    p.innerText = text
+    
+    const box = document.getElementById('comment-box');
+    box.appendChild(p)
+    })
+</script>
+</body>
+</html>
